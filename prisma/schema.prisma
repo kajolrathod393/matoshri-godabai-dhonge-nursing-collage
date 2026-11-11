@@ -1,0 +1,63 @@
+// College database schema.
+// Works with MySQL / MariaDB. To use SQL Server instead, change `provider` to "sqlserver",
+// switch the adapter in lib/db.ts, and run `npm run db:migrate` again.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+/// Notices shown on the home page ("Latest Notices").
+model Notice {
+  id        Int      @id @default(autoincrement())
+  college   String   @db.VarChar(20)
+  /// Date shown on the notice.
+  date      DateTime @db.Date
+  title     String   @db.VarChar(300)
+  titleMr   String   @default("") @db.VarChar(300)
+  /// Optional URL or /public path (for example a PDF).
+  link      String   @default("") @db.VarChar(500)
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([college, published, date])
+  @@map("notices")
+}
+
+enum EnquiryStatus {
+  new
+  contacted
+  admitted
+  closed
+}
+
+/// Admission enquiries sent from the website form.
+model Enquiry {
+  id        Int           @id @default(autoincrement())
+  college   String        @db.VarChar(20)
+  name      String        @db.VarChar(120)
+  /// 10-digit Indian mobile number.
+  phone     String        @db.VarChar(15)
+  email     String        @default("") @db.VarChar(200)
+  course    String        @default("GNM") @db.VarChar(100)
+  /// 12th stream: Arts / Commerce / Science.
+  stream    String        @default("") @db.VarChar(50)
+  village   String        @default("") @db.VarChar(120)
+  message   String        @default("") @db.VarChar(1000)
+  /// Language used on the site: "en" or "mr".
+  language  String        @default("en") @db.VarChar(5)
+  status    EnquiryStatus @default(new)
+  /// Office notes, only visible in the admin panel.
+  notes     String        @default("") @db.VarChar(2000)
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@index([college, createdAt])
+  @@index([status])
+  @@map("enquiries")
+}

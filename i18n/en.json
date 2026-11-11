@@ -1,0 +1,121 @@
+{
+  "common": {
+    "skipToContent": "Skip to main content",
+    "logoAlt": "College logo",
+    "runBy": "Run by"
+  },
+  "lang": {
+    "switchTo": "मराठी",
+    "switchLabel": "मराठीमध्ये पहा (View in Marathi)"
+  },
+  "topbar": {
+    "phone": "Phone",
+    "email": "Email",
+    "antiRagging": "Anti-Ragging Helpline"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "admissions": "Admissions",
+    "muhsMandate": "MUHS Mandate",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "collegeCode": "College code",
+    "approvalsLabel": "Approvals and affiliation",
+    "admissionEnquiry": "Admission Enquiry",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Hello, I would like to know about GNM admission 2026-27 at Matoshri Godabai Dhonge College of Nursing, Khambale.",
+    "admissionsCard": "Admissions open",
+    "limitedSeats": "Limited seats",
+    "course": "Course",
+    "duration": "Duration",
+    "eligibility": "Eligibility",
+    "seats": "Seats"
+  },
+  "notices": {
+    "title": "Latest Notices",
+    "new": "New",
+    "empty": "No notices yet"
+  },
+  "intro": {
+    "title": "Welcome to our College",
+    "purpose": "Purpose",
+    "objectives": "General Objectives",
+    "approvedBy": "Approved by",
+    "photoAlt": "Smiling nurses and healthcare staff"
+  },
+  "admission": {
+    "title": "Admissions 2026-27",
+    "subtitle": "Course details and documents for admission",
+    "documents": "Documents required",
+    "documentsNote": "Please confirm the final list of documents with the college office.",
+    "enquire": "Call for admission"
+  },
+  "highlights": {
+    "title": "College Features",
+    "subtitle": "What students get at our college"
+  },
+  "findUs": {
+    "title": "How to Reach Us",
+    "address": "Address",
+    "phone": "Office phone",
+    "email": "Email",
+    "officeHours": "Office hours",
+    "people": "For admission enquiries",
+    "mapTitle": "Map showing the college location",
+    "directions": "Get directions"
+  },
+  "mobileBar": {
+    "label": "Quick actions",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "directions": "Directions"
+  },
+  "comingSoon": {
+    "body": "This page is coming soon.",
+    "back": "Back to home"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "antiRagging": "Anti-Ragging",
+    "antiRaggingText": "National Anti-Ragging Helpline (24x7)",
+    "rights": "All rights reserved.",
+    "directions": "Get directions on Google Maps →",
+    "whatsappChannel": "Join our WhatsApp channel"
+  },
+  "enquiryForm": {
+    "title": "Admission Enquiry",
+    "subtitle": "Send your details and the college office will contact you",
+    "name": "Full name",
+    "nameError": "Please enter your name.",
+    "phone": "Mobile number",
+    "phoneError": "Please enter a valid 10-digit mobile number.",
+    "email": "Email (optional)",
+    "emailError": "Please enter a valid email address.",
+    "course": "Course",
+    "stream": "12th stream",
+    "streamChoose": "Select",
+    "streamArts": "Arts",
+    "streamCommerce": "Commerce",
+    "streamScience": "Science",
+    "village": "Village / City",
+    "message": "Your question (optional)",
+    "submit": "Send enquiry",
+    "sending": "Sending…",
+    "sent": "Thank you! Your enquiry has been received. The college office will contact you soon.",
+    "sendAnother": "Send another enquiry",
+    "failed": "Sorry, the enquiry could not be sent right now. Please call the office:",
+    "privacy": "Your details are used only to reply to your admission enquiry."
+  },
+  "gallery": {
+    "title": "Campus Life",
+    "subtitle": "Facilities where our students learn and grow"
+  }
+}
